@@ -1,2 +1,2 @@
 # personal-website
- a personal website showcasing your life story, from your childhood experiences to your current academic pursuits. 
+ a personal website showcasing my life story, from my childhood experiences to my current academic pursuits. 
