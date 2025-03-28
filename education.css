@@ -1,6 +1,4 @@
-/* styles.css - Education Page */
 
-/* General Styles - Consistent with other pages */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -23,7 +21,6 @@ body {
     font-size: 2em;
 }
 
-/* Header Styles - Consistent */
 .header {
     background-color: #f8f8f8;
     padding: 15px 0;
@@ -67,7 +64,6 @@ body {
     cursor: pointer;
 }
 
-/* Education Hero Section */
 .education-hero {
     background-color: #f0f8ff;
     text-align: center;
@@ -85,7 +81,7 @@ body {
     color: #666;
 }
 
-/* Current Education Status */
+
 .current-education {
     padding: 60px 0;
 }
@@ -145,7 +141,7 @@ body {
     margin-bottom: 5px;
 }
 
-/* Academic Timeline */
+
 .academic-timeline {
     padding: 60px 0;
     background-color: #f9f9f9;
@@ -214,7 +210,6 @@ body {
     margin-bottom: 5px;
 }
 
-/* Key Achievements */
 .achievements-section {
     padding: 60px 0;
 }
@@ -297,7 +292,7 @@ body {
     color: #777;
 }
 
-/* Footer Styles - Consistent */
+/* Footer Styles */
 .footer {
     background-color: #333;
     color: #fff;
