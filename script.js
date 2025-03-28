@@ -1,37 +1,56 @@
 
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function (event) {
-        event.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 50,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
 
 
-const nav = document.querySelector('nav ul');
-const menuToggle = document.createElement('div');
-menuToggle.innerHTML = '&#9776;'; 
-menuToggle.style.cssText = 'cursor: pointer; font-size: 1.5rem; display: none; color: #007bff; padding: 10px;';
-document.querySelector('nav').prepend(menuToggle);
-
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('year').textContent = new Date().getFullYear();
-});
-
-
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-        nav.classList.remove('active');
+document.addEventListener('DOMContentLoaded', function() {
+    // Navigation Toggle
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+  
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('show');
+      });
     }
-});
+  
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const targetId = this.getAttribute('href').substring(1); 
+        const targetElement = document.getElementById(targetId);
+  
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 60, 
+            behavior: 'smooth'
+          });
+  
+          if (navMenu.classList.contains('show')) {
+              navMenu.classList.remove('show');
+          }
+        }
+      });
+    });
+  
+   
+    const newsletterForm = document.querySelector('.footer-newsletter');
+  
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+  
+        const emailInput = newsletterForm.querySelector('input[type="email"]');
+        const email = emailInput.value;
+  
+       
+        if (email && email.includes('@')) {
+          alert('Thank you for subscribing!'); 
+          emailInput.value = '';
+        } else {
+          alert('Please enter a valid email address.');
+        }
+      });
+    }
+  
+    
+  });
