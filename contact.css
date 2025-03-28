@@ -1,9 +1,7 @@
-/* contact.css */
 
-/* Import Poppins Font (if not already included) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +21,6 @@ body {
     padding: 0 20px;
 }
 
-/* Header Styles (Consistent with other pages) */
 .header {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -69,7 +66,7 @@ body {
     cursor: pointer;
 }
 
-/* Contact Hero Section */
+
 .contact-hero {
     background-color: #e6f7ff;
     padding: 80px 0;
@@ -87,7 +84,7 @@ body {
     color: #666;
 }
 
-/* Contact Information */
+
 .contact-info {
     padding: 60px 0;
 }
@@ -113,7 +110,6 @@ body {
     text-align: center;
 }
 
-/* Direct Contact */
 .contact-details {
     display: flex;
     flex-direction: column;
@@ -148,7 +144,7 @@ body {
     color: #0056b3;
 }
 
-/* Contact Form */
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -193,7 +189,6 @@ body {
     background-color: #003d82;
 }
 
-/* Social Media Links */
 .social-section {
     padding: 40px 0;
     text-align: center;
@@ -229,7 +224,7 @@ body {
     font-size: 1.5rem;
 }
 
-/* Footer Styles (Consistent with other pages) */
+
 .footer {
     background-color: #333;
     color: #fff;
@@ -409,11 +404,11 @@ body {
     }
 
     .contact-grid {
-        grid-template-columns: 1fr; /* Stack cards on small screens */
+        grid-template-columns: 1fr; 
     }
 
     .social-links {
-        flex-direction: column; /* Stack social links */
+        flex-direction: column;
         align-items: center;
     }
 
