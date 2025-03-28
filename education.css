@@ -1,0 +1,443 @@
+/* styles.css - Education Page */
+
+/* General Styles - Consistent with other pages */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0056b3;
+    font-size: 2em;
+}
+
+/* Header Styles - Consistent */
+.header {
+    background-color: #f8f8f8;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand a {
+    text-decoration: none;
+    font-size: 1.8em;
+    color: #0056b3;
+    font-weight: 600;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Education Hero Section */
+.education-hero {
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.education-hero .page-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+.education-hero .page-subtitle {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Current Education Status */
+.current-education {
+    padding: 60px 0;
+}
+
+.education-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.education-card.featured {
+    border-left: 5px solid #0056b3;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header i {
+    font-size: 2em;
+    color: #0056b3;
+    margin-right: 15px;
+}
+
+.card-content h3 {
+    margin-bottom: 5px;
+    color: #0056b3;
+}
+
+.card-content .degree {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.card-content .year {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.current-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail-item {
+    text-align: center;
+}
+
+.detail-item i {
+    font-size: 1.5em;
+    color: #0056b3;
+    margin-bottom: 5px;
+}
+
+/* Academic Timeline */
+.academic-timeline {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background-color: #ddd;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.education-level {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.education-level i {
+    font-size: 1.5em;
+    color: #0056b3;
+    margin-right: 10px;
+}
+
+.education-level h3 {
+    margin: 0;
+    color: #0056b3;
+}
+
+.education-level .year {
+    color: #777;
+    margin-left: auto;
+}
+
+.education-details h4 {
+    margin-bottom: 5px;
+    color: #0056b3;
+}
+
+.achievements-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.achievements-list li {
+    margin-bottom: 5px;
+}
+
+/* Key Achievements */
+.achievements-section {
+    padding: 60px 0;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.achievement-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.achievement-icon {
+    font-size: 2em;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+.achievement-card h3 {
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.achievement-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.achievement-card li {
+    margin-bottom: 5px;
+}
+
+/* Extracurricular Activities */
+.extracurricular-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.activity-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.activity-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.activity-content {
+    padding: 20px;
+}
+
+.activity-content h3 {
+    margin-bottom: 5px;
+    color: #0056b3;
+}
+
+.activity-content .role {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.activity-content .description {
+    color: #777;
+}
+
+/* Footer Styles - Consistent */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-top {
+    border-bottom: 1px solid #444;
+    padding-bottom: 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-about {
+    line-height: 1.8;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #444;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #0056b3;
+}
+
+.footer-links, .footer-contact {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-contact li {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .footer-contact a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .footer-contact a:hover {
+    color: #fff;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: #0056b3;
+}
+
+.footer-newsletter {
+    display: flex;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+}
+
+.newsletter-btn {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    border: none;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.copyright {
+    margin-bottom: 10px;
+}
+
+.footer-bottom-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #fff;
+}
+
+/* Responsive Design - Consistent */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-link {
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .current-details, .activities-grid, .achievements-grid {
+        flex-direction: column;
+    }
+}
